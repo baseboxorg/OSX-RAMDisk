@@ -53,13 +53,13 @@ Works on
 Give it a try before installing
 ===============================
 ```bash
-$ curl -o startupRAMDiskandCacheMover.sh https://raw.githubusercontent.com/zafarella/OSX-RAMDisk/master/Contents/MacOS/startupRAMDiskandCacheMover.sh &&
+$ curl -o startupRAMDiskandCacheMover.sh https://raw.githubusercontent.com/baseboxorg/OSX-RAMDisk/master/Contents/MacOS/startupRAMDiskandCacheMover.sh &&
 chmod +x startupRAMDiskandCacheMover.sh &&
 ./startupRAMDiskandCacheMover.sh
 ```
 or
 ```
-git clone git@github.com:zafarella/OSX-RAMDisk.git &&
+git clone git@github.com:baseboxorg/OSX-RAMDisk.git &&
 OSX-RAMDisk/Contents/MacOS/startupRAMDiskandCacheMover.sh
 ```
 Jetbrains IDE notes (IntelliJ)
