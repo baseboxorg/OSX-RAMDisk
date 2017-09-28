@@ -177,6 +177,25 @@ move_chrome_chanary_cache()
     fi
 }
 
+
+# /Users/${USER}/Library/Caches/com.operasoftware.OperaNext
+#
+# OperaNext Cache
+#
+move_operanext_cache()
+{
+    if [ -d "/Users/${USER}/Library/Caches/com.operasoftware.OperaNext" ]; then
+        if user_response ${MSG_PROMPT_FOUND} 'OperaNext'${MSG_MOVE_CACHE}; then
+            close_app "OperaNext"
+            /bin/rm -rf ~/Library/Caches/com.operasoftware.OperaNext
+            /bin/mkdir -p ${USERRAMDISK}/OperaSoftware/OperaNext
+            /bin/ln -s ${USERRAMDISK}/OperaSoftware/OperaNext ~/Library/Caches/com.operasoftware.OperaNext
+            echo "Moved OperaNext cache."
+        fi
+    fi
+}
+
+
 #
 # Safari Cache
 #
@@ -358,6 +377,7 @@ main() {
     mk_ram_disk
     # move the caches
     move_chrome_cache
+    move_operanext_cache
     move_safari_cache
     move_idea_cache
     move_ideace_cache
@@ -375,3 +395,4 @@ main() {
 
 main "$@"
 # -----------------------------------------------------------------------------------
+
