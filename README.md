@@ -59,7 +59,7 @@ chmod +x startupRAMDiskandCacheMover.sh &&
 ```
 or
 ```
-git clone git@github.com:baseboxorg/OSX-RAMDisk.git &&
+git clone https://github.com/baseboxorg/OSX-RAMDisk.git &&
 OSX-RAMDisk/Contents/MacOS/startupRAMDiskandCacheMover.sh
 ```
 Jetbrains IDE notes (IntelliJ)
